@@ -2,7 +2,7 @@ name: "GET IRAN-IP-Address"
 
 on:
   push:
-    branches: ["master"]
+    branches: ["main"]
   schedule:
     - cron: "*/15 * * * *"
 
@@ -12,15 +12,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: Run Bash Script and Commit Changes
         run: |
           bash get.sh > list.rsc
-          git config --global user.email "mustafa.tayefi@gmail.com"
-          git config --global user.name "ChosoMeister"
+          git config --global user.email "${{ github.actor }}@users.noreply.github.com"
+          git config --global user.name "${{ github.actor }}"
           git add -A
-          git diff-index --quiet HEAD || git commit -m "Automatic update"
+          git diff-index --quiet HEAD || git commit -m "Automatic update: $(date)"
 
       - name: Push changes
         run: |
