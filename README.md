@@ -1,6 +1,6 @@
 ## Get IP Iran
 
-This script is for get Iran ip subnet V4 and V6 and added to address list for Mikrotik.
+This script is for get Iran ip subnet V4 and V6 and added to address list for Mikrotik
 
 ## How to use script
 
