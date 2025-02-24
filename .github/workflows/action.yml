@@ -1,0 +1,28 @@
+name: "GET IRAN-IP-Address"
+
+on:
+  push:
+    branches: ["main"]
+  schedule:
+    - cron: "*/15 * * * *"
+
+jobs:
+  runscript:
+    name: Get-IP
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v2
+
+      - name: Run Bash Script and Commit Changes
+        run: |
+          bash get.sh > list.rsc
+          git config --global user.email "mustafa@tayefi.me"
+          git config --global user.name "Mustafa Tayefi"
+          git add -A
+          git diff-index --quiet HEAD || git commit -m "Automatic update"
+
+      - name: Push changes
+        run: |
+          git remote set-url origin https://${{ secrets.GITHUB_TOKEN }}@github.com/ChosoMeister/Mikrotik-IRAN-IP-List.git
+          git push
