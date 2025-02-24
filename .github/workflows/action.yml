@@ -17,12 +17,12 @@ jobs:
       - name: Run Bash Script and Commit Changes
         run: |
           bash get.sh > list.rsc
-          git config --global user.email "mustafa@tayefi.me"
-          git config --global user.name "Mustafa Tayefi"
+          git config --global user.email "mustafa.tayefi@gmail.com"
+          git config --global user.name "ChosoMeister"
           git add -A
           git diff-index --quiet HEAD || git commit -m "Automatic update"
 
       - name: Push changes
         run: |
-          git remote set-url origin https://${{ secrets.Secret_Token }}@github.com/ChosoMeister/Mikrotik-IRAN-IP-List.git
+          git remote set-url origin https://${{ secrets.GGHCR_TOKEN }}@github.com/ChosoMeister/Mikrotik-IRAN-IP-List.git
           git push
