@@ -1,4 +1,4 @@
-#Last update: Fri May  8 07:22:59 UTC 2026
+#Last update: Fri May  8 09:13:02 UTC 2026
 /ip firewall address-list remove [/ip firewall address-list find list=IRAN-IP-Address]
 /ip firewall address-list
 :do { add address=2.57.3.0/24 list=IRAN-IP-Address} on-error={}
@@ -870,6 +870,7 @@
 :do { add address=158.255.74.0/24 list=IRAN-IP-Address} on-error={}
 :do { add address=158.255.78.0/24 list=IRAN-IP-Address} on-error={}
 :do { add address=159.20.96.0/20 list=IRAN-IP-Address} on-error={}
+:do { add address=164.40.233.0/24 list=IRAN-IP-Address} on-error={}
 :do { add address=164.138.16.0/21 list=IRAN-IP-Address} on-error={}
 :do { add address=164.138.128.0/18 list=IRAN-IP-Address} on-error={}
 :do { add address=164.138.202.0/24 list=IRAN-IP-Address} on-error={}
@@ -1924,7 +1925,7 @@
 :do { add address=217.198.190.0/24 list=IRAN-IP-Address} on-error={}
 :do { add address=217.218.0.0/15 list=IRAN-IP-Address} on-error={}
 :do { add address=10.0.0.0/8 list=IRAN-IP-Address} on-error={}
-#Last update: Fri May  8 07:23:00 UTC 2026
+#Last update: Fri May  8 09:13:03 UTC 2026
 /ipv6 firewall address-list remove [/ipv6 firewall address-list find list=IRAN-IP-Address]
 /ipv6 firewall address-list
 :do { add address=2001:678:b0::/46 list=IRAN-IP-Address} on-error={}
