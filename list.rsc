@@ -1,4 +1,4 @@
-#Last update: 2026-07-24 09:50:56 +0330
+#Last update: 2026-07-24 13:41:13 +0330
 /ip firewall address-list remove [/ip firewall address-list find list=IRAN-IP-Address]
 /ip firewall address-list
 :do { add address=2.57.3.0/24 list=IRAN-IP-Address} on-error={}
@@ -362,6 +362,7 @@
 :do { add address=85.8.231.0/24 list=IRAN-IP-Address} on-error={}
 :do { add address=85.8.232.0/24 list=IRAN-IP-Address} on-error={}
 :do { add address=85.8.236.0/24 list=IRAN-IP-Address} on-error={}
+:do { add address=85.8.242.0/24 list=IRAN-IP-Address} on-error={}
 :do { add address=85.9.64.0/18 list=IRAN-IP-Address} on-error={}
 :do { add address=85.15.0.0/18 list=IRAN-IP-Address} on-error={}
 :do { add address=85.133.128.0/17 list=IRAN-IP-Address} on-error={}
@@ -1473,6 +1474,7 @@
 :do { add address=185.213.8.0/22 list=IRAN-IP-Address} on-error={}
 :do { add address=185.213.164.0/22 list=IRAN-IP-Address} on-error={}
 :do { add address=185.213.195.0/24 list=IRAN-IP-Address} on-error={}
+:do { add address=185.213.200.0/22 list=IRAN-IP-Address} on-error={}
 :do { add address=185.214.36.0/22 list=IRAN-IP-Address} on-error={}
 :do { add address=185.215.124.0/22 list=IRAN-IP-Address} on-error={}
 :do { add address=185.215.152.0/22 list=IRAN-IP-Address} on-error={}
@@ -1952,7 +1954,7 @@
 :do { add address=217.218.0.0/15 list=IRAN-IP-Address} on-error={}
 :do { add address=10.0.0.0/8 list=IRAN-IP-Address} on-error={}
 
-#Last update: 2026-07-24 09:50:56 +0330
+#Last update: 2026-07-24 13:41:13 +0330
 /ipv6 firewall address-list remove [/ipv6 firewall address-list find list=IRAN-IP-Address]
 /ipv6 firewall address-list
 :do { add address=2001:678:b0::/46 list=IRAN-IP-Address} on-error={}
@@ -2250,6 +2252,7 @@
 :do { add address=2a0a:7900::/29 list=IRAN-IP-Address} on-error={}
 :do { add address=2a0a:97c0::/29 list=IRAN-IP-Address} on-error={}
 :do { add address=2a0a:a480::/29 list=IRAN-IP-Address} on-error={}
+:do { add address=2a0a:ac00::/29 list=IRAN-IP-Address} on-error={}
 :do { add address=2a0a:bc40::/32 list=IRAN-IP-Address} on-error={}
 :do { add address=2a0a:bc80::/29 list=IRAN-IP-Address} on-error={}
 :do { add address=2a0a:d340::/29 list=IRAN-IP-Address} on-error={}
